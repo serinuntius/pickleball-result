@@ -8,4 +8,5 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0.86"
 clap = { version = "4.5.13", features = ["derive"] }
+rayon = "1.10.0"
 svg2pdf = "0.11.0"
