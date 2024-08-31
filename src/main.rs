@@ -1,5 +1,6 @@
 use anyhow::{Context, Result};
 use clap::Parser;
+use rayon::prelude::*;
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 use std::iter::Peekable;
@@ -90,27 +91,22 @@ fn process_player_groups<I>(
 where
     I: Iterator<Item = std::io::Result<String>>,
 {
-    let mut player_groups = Vec::new();
-    let mut group_index = 0;
+    let player_groups: Vec<Vec<String>> = lines
+        .map(|line| line.map(|l| l.split(',').map(String::from).collect::<Vec<String>>()))
+        .collect::<Result<Vec<_>, _>>()?;
 
-    while let Some(line) = lines.next() {
-        let line = line?;
-        let player_names = line.split(',').map(String::from).collect::<Vec<String>>();
-        player_groups.push(player_names);
-
-        if player_groups.len() == 4 || lines.peek().is_none() {
+    player_groups
+        .par_chunks(4)
+        .enumerate()
+        .try_for_each(|(group_index, chunk)| {
             process_group(
                 master_svg_str,
-                &player_groups,
+                chunk,
                 &args.tournament_name,
                 &args.output_path,
                 group_index,
-            )?;
-
-            group_index += 1;
-            player_groups.clear();
-        }
-    }
+            )
+        })?;
 
     Ok(())
 }
