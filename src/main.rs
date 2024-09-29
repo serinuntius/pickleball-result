@@ -158,23 +158,26 @@ fn replace_svg(
     for (group_index, group) in player_groups.iter().enumerate() {
         for player_num in 1..=4 {
             let player_key = format!("Player{}", player_num);
-            // 1,2 => Pair No1; 3,4 => Pair No2
-            let pair_key = format!("Pair No{}", (player_num + 1) / 2);
             if let Some(player_name) = group.get(&player_key) {
                 let player_number = group_index * 4 + player_num;
                 let player_number_str = format!(">PLAYER{}<", player_number);
                 let player_name_str = format!(">{}<", player_name);
                 svg_str = svg_str.replace(&player_number_str, &player_name_str);
 
-                // Skip Pair No replacement for even indices
-                if group_index % 2 != 1 {
-                    continue;
-                }
-
-                // This process is only for odd indices
-                if let Some(pair_no) = group.get(&pair_key) {
-                    let pair_no_str = format!(">Pair No{}<", pair_no);
-                    svg_str = svg_str.replace(&pair_no_str, pair_no);
+                if player_num == 1 {
+                    if let Some(pair_no) = group.get("Pair No1") {
+                        let group_number = group_index * 2 + 1;
+                        let pair_no_str = format!(">Pair No{}<", group_number);
+                        let result_str = format!(">{}<", pair_no);
+                        svg_str = svg_str.replace(&pair_no_str, &result_str);
+                    }
+                } else if player_num == 3 {
+                    if let Some(pair_no) = group.get("Pair No2") {
+                        let group_number = group_index * 2 + 2;
+                        let pair_no_str = format!(">Pair No{}<", group_number);
+                        let result_str = format!(">{}<", pair_no);
+                        svg_str = svg_str.replace(&pair_no_str, &result_str);
+                    }
                 }
             }
         }
