@@ -1,9 +1,9 @@
 use anyhow::{Context, Result};
 use clap::Parser;
+use csv::Reader;
 use rayon::prelude::*;
+use std::collections::HashMap;
 use std::fs::File;
-use std::io::{BufRead, BufReader};
-use std::iter::Peekable;
 use std::path::Path;
 use svg2pdf::{usvg, ConversionOptions, PageOptions};
 
@@ -37,37 +37,12 @@ struct Args {
 fn process(args: &Args) -> Result<()> {
     let csv_path = Path::new(&args.csv_path);
     let file = File::open(csv_path).context("Failed to open CSV file")?;
-    let reader = BufReader::new(file);
-    let mut lines = reader.lines().peekable();
-
-    validate_header(&mut lines)?;
+    let mut reader = Reader::from_reader(file);
 
     let master_svg_str =
         std::fs::read_to_string(&args.svg_path).context("Failed to read SVG file")?;
 
-    process_player_groups(&mut lines, &master_svg_str, args)?;
-
-    Ok(())
-}
-
-/// Validates the CSV header
-///
-/// # Arguments
-///
-/// * `lines` - Iterator over the lines of the CSV file
-///
-/// # Returns
-///
-/// * `Result<()>` - Ok if header is valid, Err otherwise
-fn validate_header<I>(lines: &mut I) -> Result<()>
-where
-    I: Iterator<Item = std::io::Result<String>>,
-{
-    let header = lines.next().context("Failed to read header line")??;
-
-    if header != "player1,player2,player3,player4" {
-        anyhow::bail!("Invalid header: {}", header);
-    }
+    process_player_groups(&mut reader, &master_svg_str, args)?;
 
     Ok(())
 }
@@ -76,24 +51,20 @@ where
 ///
 /// # Arguments
 ///
-/// * `lines` - Peekable iterator over the lines of the CSV file
+/// * `reader` - CSV reader
 /// * `master_svg_str` - String containing the master SVG template
 /// * `args` - Command line arguments
 ///
 /// # Returns
 ///
 /// * `Result<()>` - Ok if processing succeeds, Err otherwise
-fn process_player_groups<I>(
-    lines: &mut Peekable<I>,
+fn process_player_groups(
+    reader: &mut Reader<File>,
     master_svg_str: &str,
     args: &Args,
-) -> Result<()>
-where
-    I: Iterator<Item = std::io::Result<String>>,
-{
-    let player_groups: Vec<Vec<String>> = lines
-        .map(|line| line.map(|l| l.split(',').map(String::from).collect::<Vec<String>>()))
-        .collect::<Result<Vec<_>, _>>()?;
+) -> Result<()> {
+    let player_groups: Vec<HashMap<String, String>> =
+        reader.deserialize().collect::<Result<Vec<_>, _>>()?;
 
     player_groups
         .par_chunks(4)
@@ -138,7 +109,7 @@ fn svg_to_pdf(svg_str: &str, output_path: &str) -> Result<()> {
 /// # Arguments
 ///
 /// * `master_svg_str` - String containing the master SVG template
-/// * `player_groups` - Vector of player groups
+/// * `player_groups` - Slice of HashMaps containing player information
 /// * `tournament_name` - Name of the tournament
 /// * `output_path` - Base path for output files
 /// * `group_index` - Index of the current group
@@ -148,7 +119,7 @@ fn svg_to_pdf(svg_str: &str, output_path: &str) -> Result<()> {
 /// * `Result<()>` - Ok if processing succeeds, Err otherwise
 fn process_group(
     master_svg_str: &str,
-    player_groups: &[Vec<String>],
+    player_groups: &[HashMap<String, String>],
     tournament_name: &str,
     output_path: &str,
     group_index: usize,
@@ -166,7 +137,7 @@ fn process_group(
 /// # Arguments
 ///
 /// * `svg_str` - String containing the SVG template
-/// * `player_groups` - Vector of player groups
+/// * `player_groups` - Slice of HashMaps containing player information
 /// * `tournament_name` - Name of the tournament
 ///
 /// # Returns
@@ -174,10 +145,10 @@ fn process_group(
 /// * `Result<String>` - Ok with modified SVG string if successful, Err otherwise
 fn replace_svg(
     svg_str: &str,
-    player_groups: &[Vec<String>],
+    player_groups: &[HashMap<String, String>],
     tournament_name: &str,
 ) -> Result<String> {
-    if player_groups.is_empty() || player_groups.iter().any(Vec::is_empty) {
+    if player_groups.is_empty() {
         anyhow::bail!("Invalid player groups: {:?}", player_groups);
     }
 
@@ -185,11 +156,28 @@ fn replace_svg(
 
     // Embed player names into SVG
     for (group_index, group) in player_groups.iter().enumerate() {
-        for (player_index, player_name) in group.iter().enumerate() {
-            let player_number = group_index * 4 + player_index + 1;
-            let player_number_str = format!(">PLAYER{}<", player_number);
-            let player_name_str = format!(">{}<", player_name);
-            svg_str = svg_str.replace(&player_number_str, &player_name_str);
+        for player_num in 1..=4 {
+            let player_key = format!("Player{}", player_num);
+            if let Some(player_name) = group.get(&player_key) {
+                let player_number = group_index * 4 + player_num;
+                let player_number_str = format!(">PLAYER{}<", player_number);
+                let player_name_str = format!(">{}<", player_name);
+                svg_str = svg_str.replace(&player_number_str, &player_name_str);
+
+                if player_num == 1 || player_num == 3 {
+                    let pair_no_key = if player_num == 1 {
+                        "Pair No1"
+                    } else {
+                        "Pair No2"
+                    };
+                    if let Some(pair_no) = group.get(pair_no_key) {
+                        let group_number = group_index * 2 + player_num / 2 + 1;
+                        let pair_no_str = format!(">Pair No{}<", group_number);
+                        let result_str = format!(">{}<", pair_no);
+                        svg_str = svg_str.replace(&pair_no_str, &result_str);
+                    }
+                }
+            }
         }
     }
 

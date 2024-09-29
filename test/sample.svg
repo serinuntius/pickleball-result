@@ -9,95 +9,107 @@
 </g>
 <g id="card4">
 <rect id="card" x="446.5" y="319.5" width="371" height="253" fill="white" stroke="black"/>
-<line id="Line 3" x1="620" y1="445" x2="644" y2="445" stroke="black" stroke-width="2"/>
-<line id="Line 6" x1="591" y1="460.5" x2="600" y2="460.5" stroke="black"/>
-<line id="Line 7" x1="664" y1="460.5" x2="673" y2="460.5" stroke="black"/>
-<line id="Line 4" x1="463" y1="432.5" x2="570" y2="432.5" stroke="black"/>
+<line id="Line 3" x1="620" y1="490" x2="644" y2="490" stroke="black" stroke-width="2"/>
+<line id="Line 6" x1="591" y1="505.5" x2="600" y2="505.5" stroke="black"/>
+<line id="Line 7" x1="664" y1="505.5" x2="673" y2="505.5" stroke="black"/>
+<line id="Line 4" x1="463" y1="477.5" x2="570" y2="477.5" stroke="black"/>
 <g id="Frame 1">
-<text id="PLAYER1" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em" text-anchor="middle"><tspan x="516.5" y="423.864">PLAYER13</tspan></text>
+<text id="PLAYER1" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="491.729" y="468.864">PLAYER1</tspan></text>
 </g>
-<line id="Line 5" x1="463" y1="474.5" x2="570" y2="474.5" stroke="black"/>
+<line id="Line 5" x1="463" y1="519.5" x2="570" y2="519.5" stroke="black"/>
 <g id="Frame 2">
-<text id="PLAYER2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em" text-anchor="middle"><tspan x="516.5" y="465.864">PLAYER14</tspan></text>
+<text id="PLAYER2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="490.885" y="510.864">PLAYER2</tspan></text>
 </g>
-<line id="Line 8" x1="693" y1="434.5" x2="800" y2="434.5" stroke="black"/>
+<line id="Line 8" x1="693" y1="479.5" x2="800" y2="479.5" stroke="black"/>
 <g id="Frame 3">
-<text id="PLAYER3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em" text-anchor="middle"><tspan x="746.5" y="425.864">PLAYER15</tspan></text>
+<text id="PLAYER3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="720.697" y="470.864">PLAYER3</tspan></text>
 </g>
-<line id="Line 9" x1="693" y1="476.5" x2="800" y2="476.5" stroke="black"/>
+<line id="Line 9" x1="693" y1="521.5" x2="800" y2="521.5" stroke="black"/>
 <g id="Frame 4">
-<text id="PLAYER4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em" text-anchor="middle"><tspan x="746.5" y="467.864">PLAYER16</tspan></text>
+<text id="PLAYER4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="720.668" y="512.864">PLAYER4</tspan></text>
 </g>
 <text id="NAME" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em" text-anchor="middle"><tspan x="632" y="367.273">NAME</tspan></text>
+<text id="Score Sheet" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em" text-anchor="middle"><tspan x="632" y="391.273">Score Sheet</tspan></text>
+<text id="PairNo1" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="463.268" y="447.864">Pair No1</tspan></text>
+<text id="PairNo2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="755.424" y="447.864">Pair No2</tspan></text>
 </g>
 <g id="card3">
 <rect id="card_2" x="25.5" y="319.5" width="371" height="253" fill="white" stroke="black"/>
-<line id="Line 3_2" x1="199" y1="445" x2="223" y2="445" stroke="black" stroke-width="2"/>
-<line id="Line 6_2" x1="170" y1="460.5" x2="179" y2="460.5" stroke="black"/>
-<line id="Line 7_2" x1="243" y1="460.5" x2="252" y2="460.5" stroke="black"/>
-<line id="Line 4_2" x1="42" y1="432.5" x2="149" y2="432.5" stroke="black"/>
+<line id="Line 3_2" x1="199" y1="490" x2="223" y2="490" stroke="black" stroke-width="2"/>
+<line id="Line 6_2" x1="170" y1="505.5" x2="179" y2="505.5" stroke="black"/>
+<line id="Line 7_2" x1="243" y1="505.5" x2="252" y2="505.5" stroke="black"/>
+<line id="Line 4_2" x1="42" y1="477.5" x2="149" y2="477.5" stroke="black"/>
 <g id="Frame 1_2">
-<text id="PLAYER1_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em" text-anchor="middle"><tspan x="95.5" y="423.864">PLAYER9</tspan></text>
+<text id="PLAYER1_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="70.7285" y="468.864">PLAYER5</tspan></text>
 </g>
-<line id="Line 5_2" x1="42" y1="474.5" x2="149" y2="474.5" stroke="black"/>
+<line id="Line 5_2" x1="42" y1="519.5" x2="149" y2="519.5" stroke="black"/>
 <g id="Frame 2_2">
-<text id="PLAYER2_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em" text-anchor="middle"><tspan x="95.5" y="465.864">PLAYER10</tspan></text>
+<text id="PLAYER2_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="69.8848" y="510.864">PLAYER6</tspan></text>
 </g>
-<line id="Line 8_2" x1="272" y1="434.5" x2="379" y2="434.5" stroke="black"/>
+<line id="Line 8_2" x1="272" y1="479.5" x2="379" y2="479.5" stroke="black"/>
 <g id="Frame 3_2">
-<text id="PLAYER3_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em" text-anchor="middle"><tspan x="325.5" y="425.864">PLAYER11</tspan></text>
+<text id="PLAYER3_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="299.697" y="470.864">PLAYER7</tspan></text>
 </g>
-<line id="Line 9_2" x1="272" y1="476.5" x2="379" y2="476.5" stroke="black"/>
+<line id="Line 9_2" x1="272" y1="521.5" x2="379" y2="521.5" stroke="black"/>
 <g id="Frame 4_2">
-<text id="PLAYER4_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em" text-anchor="middle"><tspan x="325.5" y="467.864">PLAYER12</tspan></text>
+<text id="PLAYER4_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="299.668" y="512.864">PLAYER8</tspan></text>
 </g>
 <text id="NAME_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em" text-anchor="middle"><tspan x="211" y="367.273">NAME</tspan></text>
+<text id="Score Sheet_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em" text-anchor="middle"><tspan x="211" y="391.273">Score Sheet</tspan></text>
+<text id="PairNo1_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="42.2676" y="447.864">Pair No3</tspan></text>
+<text id="PairNo2_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="334.424" y="447.864">Pair No4</tspan></text>
 </g>
 <g id="card2">
 <rect id="card_3" x="446.5" y="22.5" width="371" height="253" fill="white" stroke="black"/>
-<line id="Line 3_3" x1="620" y1="148" x2="644" y2="148" stroke="black" stroke-width="2"/>
-<line id="Line 6_3" x1="591" y1="163.5" x2="600" y2="163.5" stroke="black"/>
-<line id="Line 7_3" x1="664" y1="163.5" x2="673" y2="163.5" stroke="black"/>
-<line id="Line 4_3" x1="463" y1="135.5" x2="570" y2="135.5" stroke="black"/>
+<line id="Line 3_3" x1="620" y1="193" x2="644" y2="193" stroke="black" stroke-width="2"/>
+<line id="Line 6_3" x1="591" y1="208.5" x2="600" y2="208.5" stroke="black"/>
+<line id="Line 7_3" x1="664" y1="208.5" x2="673" y2="208.5" stroke="black"/>
+<line id="Line 4_3" x1="463" y1="180.5" x2="570" y2="180.5" stroke="black"/>
 <g id="Frame 1_3">
-<text id="PLAYER1_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em" text-anchor="middle"><tspan x="516.5" y="126.864">PLAYER5</tspan></text>
+<text id="PLAYER1_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="491.729" y="171.864">PLAYER9</tspan></text>
 </g>
-<line id="Line 5_3" x1="463" y1="177.5" x2="570" y2="177.5" stroke="black"/>
+<line id="Line 5_3" x1="463" y1="222.5" x2="570" y2="222.5" stroke="black"/>
 <g id="Frame 2_3">
-<text id="PLAYER2_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em" text-anchor="middle"><tspan x="516.5" y="168.864">PLAYER6</tspan></text>
+<text id="PLAYER2_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="490.885" y="213.864">PLAYER10</tspan></text>
 </g>
-<line id="Line 8_3" x1="693" y1="137.5" x2="800" y2="137.5" stroke="black"/>
+<line id="Line 8_3" x1="693" y1="182.5" x2="800" y2="182.5" stroke="black"/>
 <g id="Frame 3_3">
-<text id="PLAYER3_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em" text-anchor="middle"><tspan x="746.5" y="128.864">PLAYER7</tspan></text>
+<text id="PLAYER3_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="720.697" y="173.864">PLAYER11</tspan></text>
 </g>
-<line id="Line 9_3" x1="693" y1="179.5" x2="800" y2="179.5" stroke="black"/>
+<line id="Line 9_3" x1="693" y1="224.5" x2="800" y2="224.5" stroke="black"/>
 <g id="Frame 4_3">
-<text id="PLAYER4_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em" text-anchor="middle"><tspan x="746.5" y="170.864">PLAYER8</tspan></text>
+<text id="PLAYER4_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="720.668" y="215.864">PLAYER12</tspan></text>
 </g>
 <text id="NAME_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em" text-anchor="middle"><tspan x="632" y="70.2727">NAME</tspan></text>
+<text id="Score Sheet_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em" text-anchor="middle"><tspan x="632" y="94.2727">Score Sheet</tspan></text>
+<text id="PairNo1_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="463.268" y="150.864">Pair No5</tspan></text>
+<text id="PairNo2_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="755.424" y="150.864">Pair No6</tspan></text>
 </g>
 <g id="card1">
 <rect id="card_4" x="25.5" y="22.5" width="371" height="253" fill="white" stroke="black"/>
-<line id="Line 3_4" x1="199" y1="148" x2="223" y2="148" stroke="black" stroke-width="2"/>
-<line id="Line 6_4" x1="170" y1="163.5" x2="179" y2="163.5" stroke="black"/>
-<line id="Line 7_4" x1="243" y1="163.5" x2="252" y2="163.5" stroke="black"/>
-<line id="Line 4_4" x1="42" y1="135.5" x2="149" y2="135.5" stroke="black"/>
+<line id="Line 3_4" x1="199" y1="193" x2="223" y2="193" stroke="black" stroke-width="2"/>
+<line id="Line 6_4" x1="170" y1="208.5" x2="179" y2="208.5" stroke="black"/>
+<line id="Line 7_4" x1="243" y1="208.5" x2="252" y2="208.5" stroke="black"/>
+<line id="Line 4_4" x1="42" y1="180.5" x2="149" y2="180.5" stroke="black"/>
 <g id="Frame 1_4">
-<text id="PLAYER1_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em" text-anchor="middle"><tspan x="95.5" y="126.864">PLAYER1</tspan></text>
+<text id="PLAYER1_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="70.7285" y="171.864">PLAYER13</tspan></text>
 </g>
-<line id="Line 5_4" x1="42" y1="177.5" x2="149" y2="177.5" stroke="black"/>
+<line id="Line 5_4" x1="42" y1="222.5" x2="149" y2="222.5" stroke="black"/>
 <g id="Frame 2_4">
-<text id="PLAYER2_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em" text-anchor="middle"><tspan x="95.5" y="168.864">PLAYER2</tspan></text>
+<text id="PLAYER2_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="69.8848" y="213.864">PLAYER14</tspan></text>
 </g>
-<line id="Line 8_4" x1="272" y1="137.5" x2="379" y2="137.5" stroke="black"/>
+<line id="Line 8_4" x1="272" y1="182.5" x2="379" y2="182.5" stroke="black"/>
 <g id="Frame 3_4">
-<text id="PLAYER3_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em" text-anchor="middle"><tspan x="325.5" y="128.864">PLAYER3</tspan></text>
+<text id="PLAYER3_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="299.697" y="173.864">PLAYER15</tspan></text>
 </g>
-<line id="Line 9_4" x1="272" y1="179.5" x2="379" y2="179.5" stroke="black"/>
+<line id="Line 9_4" x1="272" y1="224.5" x2="379" y2="224.5" stroke="black"/>
 <g id="Frame 4_4">
-<text id="PLAYER4_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em" text-anchor="middle"><tspan x="325.5" y="170.864">PLAYER4</tspan></text>
+<text id="PLAYER4_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="299.668" y="215.864">PLAYER16</tspan></text>
 </g>
 <text id="NAME_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em" text-anchor="middle"><tspan x="211" y="70.2727">NAME</tspan></text>
+<text id="Score Sheet_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em" text-anchor="middle"><tspan x="211" y="94.2727">Score Sheet</tspan></text>
+<text id="PairNo1_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="42.2676" y="150.864">Pair No7</tspan></text>
+<text id="PairNo2_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="334.424" y="150.864">Pair No8</tspan></text>
 </g>
 </g>
 <defs>
