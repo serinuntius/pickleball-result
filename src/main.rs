@@ -164,16 +164,14 @@ fn replace_svg(
                 let player_name_str = format!(">{}<", player_name);
                 svg_str = svg_str.replace(&player_number_str, &player_name_str);
 
-                if player_num == 1 {
-                    if let Some(pair_no) = group.get("Pair No1") {
-                        let group_number = group_index * 2 + 1;
-                        let pair_no_str = format!(">Pair No{}<", group_number);
-                        let result_str = format!(">{}<", pair_no);
-                        svg_str = svg_str.replace(&pair_no_str, &result_str);
-                    }
-                } else if player_num == 3 {
-                    if let Some(pair_no) = group.get("Pair No2") {
-                        let group_number = group_index * 2 + 2;
+                if player_num == 1 || player_num == 3 {
+                    let pair_no_key = if player_num == 1 {
+                        "Pair No1"
+                    } else {
+                        "Pair No2"
+                    };
+                    if let Some(pair_no) = group.get(pair_no_key) {
+                        let group_number = group_index * 2 + player_num / 2 + 1;
                         let pair_no_str = format!(">Pair No{}<", group_number);
                         let result_str = format!(">{}<", pair_no);
                         svg_str = svg_str.replace(&pair_no_str, &result_str);
