@@ -56,8 +56,8 @@
 </g>
 <text id="NAME_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em" text-anchor="middle"><tspan x="211" y="367.273">NAME</tspan></text>
 <text id="Score Sheet_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em" text-anchor="middle"><tspan x="211" y="391.273">Score Sheet</tspan></text>
-<text id="PairNo1_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="42.2676" y="447.864">Pair No1</tspan></text>
-<text id="PairNo2_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="334.424" y="447.864">Pair No2</tspan></text>
+<text id="PairNo1_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="42.2676" y="447.864">Pair No3</tspan></text>
+<text id="PairNo2_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="334.424" y="447.864">Pair No4</tspan></text>
 </g>
 <g id="card2">
 <rect id="card_3" x="446.5" y="22.5" width="371" height="253" fill="white" stroke="black"/>
@@ -82,8 +82,8 @@
 </g>
 <text id="NAME_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em" text-anchor="middle"><tspan x="632" y="70.2727">NAME</tspan></text>
 <text id="Score Sheet_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em" text-anchor="middle"><tspan x="632" y="94.2727">Score Sheet</tspan></text>
-<text id="PairNo1_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="463.268" y="150.864">Pair No1</tspan></text>
-<text id="PairNo2_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="755.424" y="150.864">Pair No2</tspan></text>
+<text id="PairNo1_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="463.268" y="150.864">Pair No5</tspan></text>
+<text id="PairNo2_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="755.424" y="150.864">Pair No6</tspan></text>
 </g>
 <g id="card1">
 <rect id="card_4" x="25.5" y="22.5" width="371" height="253" fill="white" stroke="black"/>
@@ -108,8 +108,8 @@
 </g>
 <text id="NAME_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em" text-anchor="middle"><tspan x="211" y="70.2727">NAME</tspan></text>
 <text id="Score Sheet_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em" text-anchor="middle"><tspan x="211" y="94.2727">Score Sheet</tspan></text>
-<text id="PairNo1_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="42.2676" y="150.864">Pair No1</tspan></text>
-<text id="PairNo2_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="334.424" y="150.864">Pair No2</tspan></text>
+<text id="PairNo1_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="42.2676" y="150.864">Pair No7</tspan></text>
+<text id="PairNo2_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="334.424" y="150.864">Pair No8</tspan></text>
 </g>
 </g>
 <defs>
